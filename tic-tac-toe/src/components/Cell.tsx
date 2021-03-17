@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Cell = () => {
-    const [value, setValue] = React.useState("X");
+const Cell = (props: any) => {
+    const [value, setValue] = React.useState(props.value);
+
+
 
     return (
-        <div className="cell">{value}</div>
+        <div className="cell" onClick={props.handleClick(props.row, props.column)}>{value}</div>
     )
 }
 
