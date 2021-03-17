@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.cell {
+  display: inline-block;
+  line-height: 160px;
+  width: 160px;
+  height: 160px;
+  background-color:lightgray;
+  color: black;
+  font-size: 60px;
+  text-align: center; 
+}
